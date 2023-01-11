@@ -1,6 +1,10 @@
 # CandPTestingTask
 
-Cypress test suit created for recrutment task from Code&Pepper
+Cypress test suit created for recruitment task from Code&Pepper
+
+Please install prettier to enable eslint from this page: https://github.com/prettier/eslint-config-prettier
+
+Please run yarn install to download all dependencies
 
 Options to run tests:
 
