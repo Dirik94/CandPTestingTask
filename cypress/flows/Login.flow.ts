@@ -1,9 +1,15 @@
 import { login } from '../pages/login'
 
-export const LoginToPage = () => {
-  //'should login user'
+interface LoginArgs {
+  invalidLogin: boolean
+}
+export const LoginToPage = (invalidLogin?) => {
   cy.visit('/')
-  login.loginInput_type(Cypress.env('login'))
+  if (invalidLogin) {
+    login.loginInput_type(Cypress.env('login') + 'invalid')
+  } else {
+    login.loginInput_type(Cypress.env('login'))
+  }
   login.passwordInput_type(Cypress.env('password'))
   login.loginButton_click()
 }
