@@ -1,4 +1,4 @@
-import { defineConfig } from "cypress";
+import { defineConfig } from 'cypress'
 
 export default defineConfig({
   viewportHeight: 1080,
@@ -8,16 +8,22 @@ export default defineConfig({
   taskTimeout: 100000,
   requestTimeout: 50000,
 
+  // Add user login and password here to run tests
+  env: {
+    login: '',
+    password: '',
+  },
+
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
     baseUrl: 'https://www.saucedemo.com/',
-    specPattern: 'cypress/e2e/**/*.spec.ts'
+    specPattern: 'cypress/e2e/**/*.spec.ts',
   },
 
   retries: {
     runMode: 0,
     openMode: 0,
-  }
-});
+  },
+})
