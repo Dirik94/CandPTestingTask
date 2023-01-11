@@ -13,6 +13,7 @@ declare global {
       classWithText_check(className: string, text: string): void
       class_click(className: string): void
       textIsHref_click(id: string, text: string): void
+      buttonClass_Click(className: string): void
     }
   }
 }
@@ -20,6 +21,9 @@ declare global {
 Cypress.Commands.addAll({
   textInput_type(inputFiledId: string, text: string) {
     cy.get(`[data-test="${inputFiledId}"]`).type(text)
+  },
+  buttonClass_Click(className: string) {
+    cy.get(`.${className}`).click()
   },
   buttonWithText_click(dataId: string, text: string) {
     cy.get(`[data-test="${dataId}"]`).should('have.text', text).click()
