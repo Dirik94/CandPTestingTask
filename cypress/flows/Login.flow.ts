@@ -5,5 +5,6 @@ export const LoginToPage = () => {
     cy.visit('/')
     loginPage.LoginInput_type()
     loginPage.PasswordInput_type()
+    loginPage.LoginButton_click()
   })
 }
