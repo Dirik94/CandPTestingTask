@@ -1,10 +1,9 @@
-import { loginPage } from '../pages/loginPage'
+import { login } from '../pages/login'
 
 export const LoginToPage = () => {
-  it('should login user', () => {
-    cy.visit('/')
-    loginPage.LoginInput_type()
-    loginPage.PasswordInput_type()
-    loginPage.LoginButton_click()
-  })
+  //'should login user'
+  cy.visit('/')
+  login.loginInput_type()
+  login.passwordInput_type()
+  login.loginButton_click()
 }

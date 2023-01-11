@@ -27,6 +27,18 @@
 //
 // @ts-ignore
 
+declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
+  namespace Cypress {
+    interface Chainable<Subject = any> {
+      waitForUrl(
+        url: string,
+        options?: Partial<Cypress.UrlOptions> | undefined,
+      ): void
+    }
+  }
+}
+
 Cypress.Commands.addAll({
   waitForUrl(url: string, options?: Partial<Cypress.UrlOptions> | undefined) {
     cy.url(options).should('contain', url)
