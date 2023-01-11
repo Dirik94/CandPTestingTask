@@ -3,7 +3,7 @@ import { inventory } from '../pages/inventory'
 import { CheckOutItemFlow } from '../flows/checkOutItem.flow'
 
 // This test suit will check if user can successfully purchase an item
-describe('Functional test, buy t-shir from the main page', () => {
+describe('Functional test, buy t-shirt from the main page', () => {
   it('should add to the cart t-shirt from the inventory page', () => {
     LoginToPage()
     cy.waitForUrl('/inventory.html')

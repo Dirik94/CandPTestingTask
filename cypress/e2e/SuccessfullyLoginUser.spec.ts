@@ -1,4 +1,3 @@
-import { LoginToPage } from '../flows/Login.flow'
 import { login } from '../pages/login'
 
 // This test will check if user can successfully log in to the page
