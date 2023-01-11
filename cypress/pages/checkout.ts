@@ -1,5 +1,5 @@
 enum checkOutCompleteTexts {
-  THANK_YOU = 'THANK YOU FOR YOUR ORDER',
+  THANK_YOU_TEXT = 'THANK YOU FOR YOUR ORDER',
 }
 export const checkoutPage = {
   stepOne: {
@@ -26,7 +26,7 @@ export const checkoutPage = {
   },
   complete: {
     thankYouTextVisibility_check: () => {
-      cy.textVisibility_check(checkOutCompleteTexts.THANK_YOU)
+      cy.textVisibility_check(checkOutCompleteTexts.THANK_YOU_TEXT)
     },
   },
 }
