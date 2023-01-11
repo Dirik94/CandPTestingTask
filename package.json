@@ -1,0 +1,17 @@
+{
+  "name": "cptask",
+  "version": "1.0.0",
+  "description": "Solution for C&P testing task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress run",
+    "cypress-open": "cypress open"
+  },
+  "author": "Grzegorz Domanowski",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.3.0",
+    "typescript": "^4.9.4"
+  }
+}
