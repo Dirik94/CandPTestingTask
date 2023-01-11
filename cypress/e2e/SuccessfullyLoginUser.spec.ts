@@ -1,5 +1,5 @@
-import {LoginToPage} from "../flows/Login.flow";
+import { LoginToPage } from '../flows/Login.flow'
 
 describe('Functional test, successfully login user', () => {
-    LoginToPage()
+  LoginToPage()
 })
