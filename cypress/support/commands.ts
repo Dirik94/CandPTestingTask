@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+/// <reference types="cypress/support/index" />
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -25,19 +25,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 //
-// @ts-ignore
-
-declare global {
-  // eslint-disable-next-line @typescript-eslint/no-namespace
-  namespace Cypress {
-    interface Chainable<Subject = any> {
-      waitForUrl(
-        url: string,
-        options?: Partial<Cypress.UrlOptions> | undefined,
-      ): void
-    }
-  }
-}
 
 Cypress.Commands.addAll({
   waitForUrl(url: string, options?: Partial<Cypress.UrlOptions> | undefined) {
