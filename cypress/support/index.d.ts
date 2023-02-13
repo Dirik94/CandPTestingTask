@@ -1,4 +1,3 @@
-// @ts-ignore
 import './commands'
 import './components'
 declare global {
