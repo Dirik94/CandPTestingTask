@@ -1,5 +1,6 @@
 // @ts-ignore
-
+import './commands'
+import './components'
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace Cypress {
